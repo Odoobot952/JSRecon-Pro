@@ -1,9 +1,0 @@
-{
-  "name": "jsrecon-pro-v2-ast",
-  "version": "2.0.0",
-  "private": true,
-  "description": "AST analyzer helper for JSRecon Pro v2",
-  "dependencies": {
-    "acorn": "^8.15.0"
-  }
-}
