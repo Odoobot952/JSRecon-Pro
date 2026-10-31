@@ -1,0 +1,12 @@
+{
+  "name": "jsxray-pro",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Local-first JavaScript security research analyzer",
+  "scripts": {
+    "analyze:ast": "node ast_analyzer.js",
+    "browser-check": "node browser_check.js"
+  },
+  "dependencies": { "acorn": "^8.15.0" },
+  "devDependencies": { "playwright": "^1.55.0" }
+}
