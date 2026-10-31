@@ -1,0 +1,11 @@
+<!doctype html><meta charset="utf-8"><title>JSX-Ray Local DOM Lab</title>
+<h1>Local DOM Security Lab</h1>
+<p>Harmless local training page. No network requests or real payloads.</p>
+<label>Text input <input id="value" value="hello"></label>
+<button id="safe">Render as text</button><button id="unsafe">Demonstrate HTML sink</button>
+<div id="output"></div>
+<script>
+const input=document.querySelector('#value'), output=document.querySelector('#output');
+document.querySelector('#safe').onclick=()=>{output.textContent=input.value};
+document.querySelector('#unsafe').onclick=()=>{output.innerHTML=input.value}; // intentional sink for local analysis
+</script>
